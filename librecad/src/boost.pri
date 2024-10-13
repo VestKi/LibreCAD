@@ -138,7 +138,7 @@ win32 {
 		BOOST_DIR = "$$(BOOST_DIR)"
 	} else:isEmpty( BOOST_DIR ) {
 		# BOOST_DIR QMake variable is not set at all (in custom.pro), use a hardcoded default:
-		BOOST_DIR = "/boost/boost_1_53_0"
+                BOOST_DIR = "../../../boost/"
     }
 
     !exists( "$${BOOST_DIR}/boost/version.hpp" ) {
